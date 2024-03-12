@@ -21,17 +21,58 @@ data$Attrition = ifelse(data$Attrition == "Yes", 1, 0)
 #Full model
 my_glm = glm(Attrition ~ ., family = 'binomial', data = data)
 summary(my_glm)
-
 #overall regression statistically significant
 1-pchisq((my_glm$null.dev - my_glm$deviance), (my_glm$df.null - my_glm$df.resid))
 # significant
-
-#goodness-of-fit of model1 using both deviance residuals
+#goodness-of-fit of model1 using deviance residuals
 c(deviance(my_glm), 1-pchisq(deviance(my_glm),my_glm$df.resid))
 #Model is a good fit
 
+#----------------------------------------------------------------
 
+#NumCompaniesWorked x JobRole
+model_company = glm(Attrition ~ NumCompaniesWorked + JobRole + NumCompaniesWorked*JobRole, family = 'binomial', data = data)
+summary(model_company)
+#Number of companies worked is not significant
+#overall regression statistically significant
+1-pchisq((model_company$null.dev - model_company$deviance), (model_company$df.null - model_company$df.resid))
+# significant
+#goodness-of-fit of model1 using deviance residuals
+c(deviance(model_company), 1-pchisq(deviance(model_company),model_company$df.resid))
+#Model is a good fit
 
+#----------------------------------------------------------------
+
+#TotalWorkingYears x YearsSinceLastPromotion
+model_stagnation = glm(Attrition ~ TotalWorkingYears + YearsSinceLastPromotion + TotalWorkingYears*YearsSinceLastPromotion, family = 'binomial', data = data)
+summary(model_stagnation)
+#yearssincelastpromotion is not significant
+#overall regression statistically significant
+1-pchisq((model_stagnation$null.dev - model_stagnation$deviance), (model_stagnation$df.null - model_stagnation$df.resid))
+# significant
+#goodness-of-fit of model1 using deviance residuals
+c(deviance(model_stagnation), 1-pchisq(deviance(model_stagnation),model_stagnation$df.resid))
+#Model is a good fit
+
+#----------------------------------------------------------------
+
+#composite work-life balance
+composites_score <- data$WorkLifeBalance + data$EnvironmentSatisfaction + data$RelationshipSatisfaction
+composite_model = glm(Attrition ~ Age + BusinessTravel + DistanceFromHome + 
+                  Gender + JobInvolvement + MaritalStatus + NumCompaniesWorked
+                  + OverTime + composites_score + 
+                 TotalWorkingYears + TrainingTimesLastYear + YearsInCurrentRole +
+                 YearsSinceLastPromotion, 
+               family = 'binomial', data = data)
+summary(composite_model)
+#overall regression statistically significant
+1-pchisq((composite_model$null.dev - composite_model$deviance), (composite_model$df.null - composite_model$df.resid))
+# significant
+#goodness-of-fit of model1 using deviance residuals
+c(deviance(composite_model), 1-pchisq(deviance(composite_model),composite_model$df.resid))
+#Model is a good fit
+
+#----------------------------------------------------------------
 
 # Removed highly not significant independent variables
 my_glm_1 = glm(Attrition ~ Age + BusinessTravel + DistanceFromHome + 
@@ -54,7 +95,7 @@ vif_values
 c(deviance(my_glm), 1-pchisq(deviance(my_glm_1),my_glm_1$df.resid))
 #Model is a good fit
 
-
+#----------------------------------------------------------------
 
 # Grouping Age
 young <- data$Age < 25
