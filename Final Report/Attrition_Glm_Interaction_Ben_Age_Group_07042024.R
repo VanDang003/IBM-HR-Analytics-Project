@@ -5,7 +5,7 @@ library(car)
 
 
 # Load Attrition Dataset
-data_raw = read.csv("HR_Attrition.csv", header = TRUE)
+data_raw = read.csv("../Data/HR_Attrition.csv", header = TRUE)
 head(data_raw)
 
 # Remove Over18, StandardHours, EmployeeCount & EmployeeNumber  as the data is similar across all rows. Thus, these variables are not useful.
