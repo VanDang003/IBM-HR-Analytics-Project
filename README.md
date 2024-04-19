@@ -6,7 +6,7 @@ Employee attrition leads to various issues, including hidden costs like burnout 
 <p align="center">
   <img src="attrition.jpeg" alt="Empty Office" title="Empty Office" style="text-align:center" width="400px">
   <br>
-  <em>An empty office when more people leave</em>
+  <em>An empty office with high attrition</em>
 </p>
 
 ## Dataset Source
