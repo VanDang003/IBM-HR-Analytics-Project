@@ -8,4 +8,8 @@ Employee attrition leads to various issues, including hidden costs like burnout 
 
 IBM HR Analytics Employee Attrition & Performance &rarr; Source:[here](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset "Kaggle")
 
-## How to run files?
+## Guide to Files
+* [Exploratory Data File](Code/Exploratory%20Data%20Analysis/EDA%20Notebook.ipynb)
+* 
+
+
