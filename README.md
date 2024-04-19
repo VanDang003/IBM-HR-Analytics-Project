@@ -4,7 +4,9 @@
 Employee attrition leads to various issues, including hidden costs like burnout and lost industry knowledge, as well as measurable expenses such as lost productivity and recruitment costs. Studies indicate that replacing an employee can incur a cost of three to four times their salary, or even higher. To minimize these expenses, companies need to recognize factors like commute times, salary, work-life balance, and job satisfaction that contribute to attrition. By understanding and addressing these factors, companies can develop strategies to retain employees longer, reducing overall personnel costs.
 
 <p align="center">
-  <img src="images/attrition.png" alt="Example Image" title="Example" style="text-align:center">
+  <img src="attrition.jpeg" alt="Empty Office" title="Empty Office" style="text-align:center" width="400px">
+  <br>
+  <em>An empty office when more people leave</em>
 </p>
 
 ## Dataset Source
