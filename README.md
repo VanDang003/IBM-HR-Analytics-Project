@@ -16,6 +16,13 @@ IBM HR Analytics Employee Attrition & Performance &rarr; Source:[here](https://w
 
 ## Guide to Files
 * [Exploratory Data File](Code/Exploratory%20Data%20Analysis/EDA%20Notebook.ipynb) | Analysis into the datasets and variable interactions
+* Initial Model for Progress Report - Random Forest, GLM
+* Age Group Focused Modelling - Post Progress Report 
+  * Runs were conducted using different age ranges, but the deviations from our initial model were found to be minimal.
+* Category Group Focused Modelling - Post Progress Report
+  * A regression was performed on the variables based on their category groupings. However, these models did not yield satisfactory predictive results.
+* Cross Fold Focused Modelling - Post Progress Report
+  * K-fold cross-validation was implemented to enhance the model's performance. This process involved the removal of several variables with lower scores to refine the model's predictive capabilities.  
 
 
 ## How to run files
