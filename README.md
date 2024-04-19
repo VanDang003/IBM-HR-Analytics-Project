@@ -15,6 +15,12 @@ Employee attrition leads to various issues, including hidden costs like burnout 
 IBM HR Analytics Employee Attrition & Performance &rarr; Source:[here](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset "Kaggle")
 
 ## Guide to Files
+
+### Reports
+* [Progress Report](Progress%20Report/team50progressreport.docx)
+* [Final Report](Final%20Report/team50finalreport.docx)
+
+### R Codes Walkthrough
 * [Exploratory Data File](Code/Exploratory%20Data%20Analysis/EDA%20Notebook.ipynb) | Analysis into the datasets and variable interactions
 * [Initial Model for Progress Report](Progress%20Report/Attrition_Glm_Interaction_Ben_09032024.R) - Random Forest, GLM
 * [Age Group Focused Modelling](Final%20Report/Attrition_Glm_Interaction_Ben_Age_Group_07042024.R) - For Finals
