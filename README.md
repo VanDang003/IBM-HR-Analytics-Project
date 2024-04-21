@@ -18,7 +18,7 @@ IBM HR Analytics Employee Attrition & Performance &rarr; Source:[here](https://w
 
 ### Reports
 * [Progress Report](Progress%20Report/team50progressreport.docx)
-* [Final Report](Final%20Report/team50finalreport.docx)
+* [Final Report](Final%20Report/team50finalreport.pdf)
 
 ### R Codes Walkthrough
 * [Exploratory Data File](Code/Exploratory%20Data%20Analysis/EDA%20Notebook.ipynb) | Analysis into the datasets and variable interactions
